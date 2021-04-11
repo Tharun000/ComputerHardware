@@ -24,8 +24,14 @@ def predict():
         output = prediction[0]
         if output<0:
             return render_template('index.html',prediction_text="You are requested to change your system")
+        elif (output<50 and output>0):
+            return render_template('index.html',prediction_text="Better change your PC as performance is:- {}".format(output))
+        elif (output<100 and output>50):
+            return render_template('index.html',prediction_text="In good condition as performance is:- {}".format(output))
+        elif (output<200 and output>100):
+            return render_template('index.html',prediction_text="PC at it's best as performance is:- {}".format(output))
         else:
-            return render_template('index.html',prediction_text="Predicted Performance Of  System:- {} Working Fine".format(output))
+            return render_template('index.html',prediction_text='''It's strongly suggested :-"Apna laptop badalo"''')
     else:
         return render_template('index.html')
 
