@@ -6,4 +6,5 @@
 <h1>Roll_No:B41</h1>
 <h2>All the details are clearly explained in the notebook</h2>
 <h1>Link for the hardware performance predictive model deployed with the help of heroku :https://computer-hardware.herokuapp.com</h1>
+![Alt text]
 
